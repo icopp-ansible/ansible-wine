@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Wine via Homebrew
+  package:
+    name: wine
+    state: latest
+  when: ansible_os_family == "Darwin"
